@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.button {
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 100vw;
+    cursor: pointer;
+    background-color: hsla(256, 72%, 46%, 1);
+    color: hsl(0, 0%, 100%);
+    line-height: 1;
+}
+
+.button:hover {
+    background: hsla(252, 100%, 67%, 1)
+}
+
+.container {
+    max-width: 46rem;
+    display: grid;
+    border-radius: 2rem;
+
+   
+}
+
+
+.result {
+    background: linear-gradient( hsla(252, 100%, 67%, 1),hsla(241, 81%, 54%, 1)  ) ;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.5);
+    padding: 2rem;
+    border-radius: 2rem ;
+}
+
+.grid-flow {
+    display: grid;
+    align-content: start;
+    gap:  1rem;
+}
+.grid-flow[data-spacing="large"] {
+    gap: 2rem;
+}
+
+.result-score {
+    width: 12rem;
+    border-radius: 50%;
+    background: linear-gradient( hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0));
+    aspect-ratio: 1 / 1;
+    margin-inline: auto;
+}
+.result-score span {
+    display: block;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.8;
+    color: #fff;
+}
+.result-rank {
+    font-size: 2rem;
+    color: #fff;
+}
+.summary {
+    padding: 2rem;
+}
+.summary-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 1rem;
+
+}
+.flex-group {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    flex-wrap: wrap;
+}
+.reaction {
+    background: hsla(0, 100%, 67%, 0.1);
+}
+.memory {
+    background: hsla(39, 100%, 56%, 0.1);
+}
+.verbal {
+    background: hsla(166, 100%, 37%, 0.1);
+}
+.visual {
+    background: hsla(234, 85%, 45%, 0.1)
+    ;
+}
+
+.summary-reaction {
+    color: hsl(0, 100%, 67%);
+}
+.summary-memory {
+    color: hsl(39, 100%, 56%);
+}
+.summary-verbal {
+    color: hsl(166, 100%, 37%);
+}
+.summary-visual {
+    color: hsl(234, 85%, 45%);
+}
+
+.summary-score {
+    font-weight: 200;
+    color: hsla(0 , 10% , 10%, 0.4 );
+    padding: 1rem;
+}
+
+.summary-score span {
+    font-weight: 700;
+    color: hsl(0 , 40% , 10%);
+}
+
+
+@media (min-width: 600px) {
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            margin-inline: 1rem ;
+            grid-template-columns: 1fr 1fr;
+            overflow: hidden;
+            box-shadow: .5rem 1rem 3rem hsl(0, 10%, 10%, .1 );
+        }
+    
+       
+    }
