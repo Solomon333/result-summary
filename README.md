@@ -1,3 +1,3 @@
-Front-End-Mentor challange.
+Front-End Mentor challange.
 
-- Html + CSS
+- Html + CSS.
