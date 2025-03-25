@@ -1,3 +1,1 @@
-Front-End 
-
-- Mentor challange. Html CSS
+Front-End  Mentor challange. Html CSS
